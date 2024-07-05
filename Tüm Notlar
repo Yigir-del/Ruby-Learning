@@ -1,0 +1,450 @@
+character_name = "ata"
+character_age = "20"
+puts  (character_name +  "  diye bir adam var")
+puts  ( "o adam "  +  character_age + " yasinda")
+puts  ("ama " + character_name + " yasli")
+puts  ( character_age +  " yasini sevmiyor")
+
+
+burdaki olay tek tek bişeyleri deiştirmek yerine onları bi kutuya koyup istediğim zaman kutunun adını deiştirmek     🙂
+
+
+
+
+
+
+name = "mike"
+age = 75                  burdaki olay harfleri kullandığım zaman 
+gpa = 3.2           tırnak gerekirken sayılarda gerekmez ismaleden 
+ismale = true       sonraki kısım ise  evet veya hayır veya 0 
+istall = false       kısmı ne demek oldunu henüz bende bilmiyorum
+flaws = nil
+
+
+
+
+
+
+puts “zebra akademi”  dersem  =  zebra akademi
+puts “zebra\” akademi“ dersem  =  zebra” akademi
+puts “zebra\n akademi” dersem  =  zebra
+                                  akademi
+
+                                       olarak çıktı verir
+
+
+
+
+
+phrase = "giraffe academy"
+puts phrase.upcase()     tüm harfleri büyütür
+puts phrase.downcase()    “         “  küçültür
+phrase = "     giraffe academy     "
+puts phrase.strip()     4. satırdaki gördümüz boşlukları görmezden       gelir
+
+
+
+
+phrase = "     giraffe academy     "
+puts phrase.length()
+                kaç tane karakterden oluştunun çıktısını verir
+
+
+phrase = "     giraffe academy     "
+
+
+puts phrase.include? "herhangi bir karakter.ler"
+
+
+sorduğum karakterin satırlarda var olup olmadını true..false şeklinde gösterir
+
+
+phrase ="giraffe academy 5 "
+puts phrase[0]       burdaki olay köşeli parantez sırayla her karakteri 0 dan başlayarak numaralandırıp bize sordumuz sayıdaki karakteri söyler
+
+
+  parantezi aralık parantezi şeklindede yazabiliriz [0,3]  şeklinde mesela   buda 0. karakter dahil ama 3. karakter dahil değildir.
+
+
+
+
+phrase =  "giraffe academy 5 "
+         
+puts phrase.index("ffe")
+
+
+ index dediğimiz şey  bana paranteze yazdığım kelimenin ilk karakterinin bulunduğu numarayı söyler.
+
+
+
+
+
+
+puts “herhangi bi karakter”.upcase()   tınak içini büyük harfle yazar 
+                               
+ 
+
+
+
+
+puts 2**3    dersem    2nin 3. kuvveti demiş olurum
+
+
+puts  10 % 3 dersem   10u 3e bölüp kalanı tükürür
+
+
+ num = 20
+puts ("my fav num "  + num.to_s)
+
+
+to_s    dizgi hatasını ortadan kaldırmak için
+
+
+num = -20
+puts num.abs()
+
+
+          abs    mutlak değer alma fonksiyonu
+ 
+
+
+num = 20.736543
+puts num.round()
+                  round   en yakın tam basamağa yuvarlama fonksiyonu
+
+
+
+
+num = 20.736543
+puts num.ceil()
+                 ceil kodu  kendinden bir büyük olan sayıyı verir tabi ondalık kısım varsa yoksa kendisini çıktı verir
+
+
+puts num.floor() da tam tersi
+
+
+
+
+
+num = 20.3
+puts Math.sqrt(36)
+                     sqrt  kareköke alır
+                     log   e tabannında logaritma alır
+
+
+
+
+
+
+
+puts "adinizi girin"
+name = gets.chomp()
+puts "yasinizi girin"
+age = gets.chomp()
+puts ("aaa tamam sizin adiniz " + name +  " anladim demek yasiniz " + age)
+
+
+
+
+   eğer .chomp eklemessek     1.cümle
+                               2. cümle olur
+  eğer eklersek
+                        1.cümle         2. cümlede  hemen peşinde olur
+
+
+
+
+Deneyip başarısız olduğum 
+
+ puts "bir sayi gir"                                
+ num = gets.chomp()
+ puts "islem tipi gir"
+ typ = gets.chomp()
+ puts "ikinci sayi gir"
+ num1 = gets.chomp()
+ puts (num + typ + num1)
+
+
+bikaç bilgi sonra 2. denemem hala hatalı sadece toplama yapıyor
+
+puts "bir sayi gir"
+num = gets.chomp().to_f
+puts "islem tipi gir"
+typ = gets.chomp().to_f
+puts "ikinci sayi gir"
+num1 = gets.chomp().to_f
+puts (num + typ + num1)    burda   .to_f  bi string hatasını engelleyip num ve typ ın sayısal değerler oldunu belirtiyor
+
+daha sonra tekrar denicem
+
+
+
+
+
+
+SONUNDA BİRAAZ YARDIM SONRA
+puts "enter a num1: " 
+num1 = gets.chomp.to_f 
+puts "islem turunu giriniz  (+ ,-,*,/) gibi: "
+operator = gets.chomp                         operator dediğim şey rastgele klasör
+puts "enter a num2: "                     istersem adını mahmutta yaparm
+
+
+
+
+
+
+   result = 0                    result dediğim ise sonuç
+
+
+
+
+case operator                     case  şu olursa bu olursa gibi anlam katar mesela burda
+when "+"                        + olursa - olursa şöyle olur gibi anlamlar katıyor
+    result = num1 + num2
+when "-"
+    result = num1 - num2
+when "*"
+    result = num1 * num2
+when "/"
+    result = num1 / num2
+   
+else
+    puts "gecersiz islem"           else hiçbiri gerçekleşmezse bu gerçekleşşin demek
+end
+
+
+puts "Sonuc:   #{result}"
+
+
+
+
+
+
+
+puts "enter a color: "
+color = gets.chomp()
+puts "enter a presence: "
+presence = gets.chomp()
+puts "enter a name: "
+name = gets.chomp()
+
+
+
+
+puts ("guller ve elif " + color)
+puts (presence + " mor deil kapgaraaaa")
+puts ("seni seviyorum desem yalan olur " + name)        böşlukları doldur hikayeni yaz
+puts "enter a num1: " #{I LOVE U}
+num1 = gets.chomp.to_f
+puts "enter a proces: (like these (+,-,*,/))"
+operator = gets.chomp
+puts "enter a num2: " #{cool man}
+num2 = gets.chomp.to_f
+
+
+
+
+       result = 0
+
+
+
+
+case operator
+when "+"
+    result = num1 + num2
+when "-"
+    result = num1 - num2
+when "*"
+    result =num1 * num2
+when "/"
+    result = num1 / num2
+
+
+
+
+else
+       puts "invalid entries"
+end
+
+
+  puts "sonuc:  #{result} "
+
+
+              
+
+
+
+
+
+
+puts   "please enter your school number1: "
+number1 = gets.chomp.to_f
+puts    "enter your height: "
+height = gets.chomp.to_f
+puts   "enter your name:  "
+name = gets.chomp
+
+
+
+
+puts ("merhaba " + name + " basvurunuz icin tesekkur ederiz")
+
+
+sayi = number1 + height
+
+
+if sayi > 300                                if    bu olursa  
+    puts  "basvurunuz onaylandi"             elsif   bu olursa
+                                               else farklı bişe olursa      devreye girer
+elsif sayi < 300
+    puts  " reddedildin"
+ 
+else sayi = 300
+    puts   " biz size donecegiz"
+end
+
+
+
+
+
+
+
+
+friends = Array[“ahsen”,”buse”,”rumeysa”] 
+ 
+puts friends                                  diyerek bu listeyi görüntüleyebilirim  
+     friends.sort()                           diyerek alfabetik sırayla dizerim
+     friends.reverse()                        diyerek listeyi tersten görüntülerim
+     friends.include? “herhangi bişey”        diyerek varmı yokmu diye sorarım
+
+friends =  Array.new(10, "merhaba")               BURDA Array.new   bi dizi oluştur demek
+                                             içine yazdığım 10  dizi sayısı “merhaba” da
+                                             dizilerde ne yazdığı tabi istersem tek tek te 
+                                             doldurabilirim
+puts friends.inspect
+
+
+
+
+
+
+
+
+
+
+
+
+
+states = {
+   "new york" => "NY",            bu  garip parantezin bize sağladığı şey birşeylere 
+    2 => "PA",               artık o şeyler heerneyse   anahtar isimler vermek
+    :ahmet => "ls"
+}
+
+
+
+
+
+
+puts states[:ahmet]
+      
+
+
+
+
+BU İLK BAŞARISIZ VERSİON
+
+puts   "enter a name: "
+name = gets.chomp
+puts   "enter a your age: "
+age = gets.chomp
+puts   "enter a cinsiyet"
+kod = gets.chomp
+
+
+
+if kod = kadin
+    puts ("merhaba " + name + "hanim" )
+
+
+elsif kod = erkek
+    puts ("merhaba" + name + "bey" )
+else
+    puts "ne diyon"
+
+
+end
+
+
+puts "basvurunuz icin tesekkur ederiz"
+
+puts "normal fiyat gir: "
+fiyat = gets.to_f
+vergi = 18 #%18 yani
+
+
+puts   ( fiyat + vergi*fiyat/100 )
+
+vergi hesaplama zımbırtım
+
+
+puts "guncel dolar kurunu gir: "
+kur = gets.chomp.to_f
+puts "para miktarinizi girin: "
+tl = gets.chomp.to_f
+
+
+total = tl / kur
+
+
+puts "#{total}"
+
+
+kur çeviricim
+
+
+puts "guncel dolar kurunu gir: "
+kur = gets.chomp.to_f
+puts "para miktarinizi girin: "
+tl = gets.chomp.to_f
+
+
+
+
+total = tl / kur
+
+
+if total == 0
+    puts " hatali girme karakterleri "
+
+
+else total != 0
+puts "#{total} "
+end
+
+
+buda onun gelişmiş hali
+
+
+
+
+
+
+puts "enter a number: "
+num = gets.chomp.to_f
+a = 1
+b = 1
+kasa = []
+kasa << b
+while kasa.length() != num     # fibonacci dizisi
+
+  kasa << a
+ 
+   c = a + b
+   
+   b = a
+   a = c
+
+end
+puts kasa
